@@ -1,7 +1,6 @@
 package main
 
 import "github.com/aws/aws-lambda-go/events"
-import "go.uber.org/zap"
 
 // LambdaHandler encapsulates the interaction with AWS Lambda.
 type LambdaHandler struct {
@@ -13,5 +12,6 @@ func NewLambdaHandler() *LambdaHandler {
 }
 
 func (lh *LambdaHandler) handler(event events.{{cookiecutter.recieve_event}}) (events.{{cookiecutter.return_event}}, error) {
+	logger.Info("hi from handler implementation.")
 	return event, nil
 }

@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 import "github.com/aws/aws-lambda-go/lambda"
+import "go.uber.org/zap"
+
+var (
+	logger, _ = zap.NewProduction()
+)
 
 func main() {
 	lambdaHandler := NewLambdaHandler()

@@ -10,6 +10,7 @@ cookiecutter https://github.com/claudiunicolaa/cookiecutter-golang-aws-lambda
 ```bash
 
 {{cookiecutter.directory_name}}
+├── README.md
 ├── go.mod
 ├── go.sum
 ├── lambda.go
